@@ -34,7 +34,7 @@ exports.crearEstadisticasGenerales = async (req, res) => {
       cobradoTotal,
     };
 
-    return estadisticas;
+    res.json(estadisticas);
   } catch (error) {
     console.error(error);
     throw new Error('Error al calcular las estadísticas generales');
