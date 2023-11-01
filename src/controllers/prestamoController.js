@@ -92,7 +92,7 @@ exports.eliminarPrestamoPorId = async (req, res) => {
     // Encuentra y elimina todos los registros de pagos relacionados con el préstamo
     await Pago.destroy({
       where: {
-        PrestamoId: id,
+        prestamoId: id,
       },
     });
 
