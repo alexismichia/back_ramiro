@@ -99,7 +99,7 @@ exports.eliminarPrestamoPorId = async (req, res) => {
     // Encuentra y elimina todos los registros de amortizaciones relacionados con el préstamo
     await Amortizacion.destroy({
       where: {
-        PrestamoId: id,
+        PrestamoID: id,
       },
     });
 
