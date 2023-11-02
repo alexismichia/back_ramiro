@@ -9,7 +9,7 @@ module.exports = (sequelize) => {
     correo: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
+      unique: false,
     },
     identificacion: {
       type: DataTypes.STRING,
