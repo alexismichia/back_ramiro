@@ -14,7 +14,7 @@ module.exports = (sequelize) => {
     identificacion: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
+      unique: false,
     },
     direccion: {
       type: DataTypes.STRING,
